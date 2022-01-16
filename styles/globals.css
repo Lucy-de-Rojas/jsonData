@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+hr {
+  color: red;
+  width: 100%;
+}
