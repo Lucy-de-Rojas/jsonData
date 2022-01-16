@@ -1,4 +1,4 @@
-export const link = "http://localhost:3000/api/hello";
+export const link = "http://localhost/api/hello";
 
 
 
