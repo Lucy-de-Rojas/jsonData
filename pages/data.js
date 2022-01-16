@@ -1,4 +1,4 @@
-export const link = "pages/api/hello.js";
+export const link = "https://raw.githubusercontent.com/Lucy-de-Rojas/jsonData/main/pages/api/hello.js";
 
 
 
