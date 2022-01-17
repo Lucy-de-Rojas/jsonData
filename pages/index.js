@@ -13,6 +13,8 @@ const link3  ="https://gist.githubusercontent.com/planetoftheweb/4069235/raw/0ca
 const link4 ="https://github.com/Lucy-de-Rojas/jsonData/blob/a5b8e1f557f808a88ddffeccdd7e4b063d7b9942/pages/api/hello";
 
 
+const link5 = "https://raw.githubusercontent.com/Lucy-de-Rojas/jsonData/main/pages/api/plain.json";
+
 
 
 
