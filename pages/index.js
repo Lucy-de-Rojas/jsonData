@@ -58,12 +58,12 @@ export default function Home({data}) {
 
 
 
-        <Link href="/api/hello"><a>json</a></Link>
+      
 
         {console.log(data)}
 
         {data.map(item => {
-          return <p key={item.id}>{item.title} </p>
+          return <p key={item.name}>{item.name} {' >> '} {item.age}</p>
 
         })}
 
@@ -96,7 +96,7 @@ export default function Home({data}) {
 
 
 export async function getServerSideProps() {
-  const res = await fetch(link2);
+  const res = await fetch(link5);
   const data = await res.json();
   return {props:{data}}
 
