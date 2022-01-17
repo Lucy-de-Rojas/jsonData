@@ -1,7 +1,13 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
-import { link} from './data';
+
+
+
+// const link = "http://192.168.1.251:3000/api/hello";
+
+const link2 ="https://jsonplaceholder.typicode.com/todos";
 
 
 
@@ -47,17 +53,12 @@ export default function Home({data}) {
         <h1>data</h1>
         <hr />
 
+        {console.log(data)}
 
+        {data.map(item => {
+          return <p>{item.title}</p>
 
-
-        {data.map(item=> {
-          return <>
-          
-          <p>{item.name}  {' >> '} {item.age} </p>
-          
-          </>
         })}
-
 
 
 
@@ -89,7 +90,7 @@ export default function Home({data}) {
 
 
 export async function getServerSideProps() {
-  const res = await fetch(link);
+  const res = await fetch(link2);
   const data = await res.json();
   return {props:{data}}
 
