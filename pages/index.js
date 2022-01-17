@@ -8,8 +8,9 @@ import styles from '../styles/Home.module.css';
 // const link = "http://192.168.1.251:3000/api/hello";
 
 const link2 ="https://jsonplaceholder.typicode.com/todos";
+const link3  ="https://gist.githubusercontent.com/planetoftheweb/4069235/raw/0ca9457d10f9ff0be578a699954910d7d6626726/sampledata.json"
 
-
+const link4 ="https://github.com/Lucy-de-Rojas/jsonData/blob/a5b8e1f557f808a88ddffeccdd7e4b063d7b9942/pages/api/hello";
 
 
 
@@ -53,6 +54,10 @@ export default function Home({data}) {
         <h1>data</h1>
         <hr />
 
+
+
+        <Link href="/api/hello"><a>json</a></Link>
+
         {console.log(data)}
 
         {data.map(item => {
@@ -83,7 +88,6 @@ export default function Home({data}) {
     </div>
   )
 }
-
 
 
 
